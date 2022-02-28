@@ -7,7 +7,7 @@ namespace mis321_pa2_hdwells
     {
         static void Main(string[] args)
         {
-            ColorfulAnimation();
+            Ship();
             WelcomeMessage();
         
         }
@@ -19,7 +19,7 @@ namespace mis321_pa2_hdwells
             Chooseplayer1();
         }
 
-        static void ColorfulAnimation()
+        static void Ship()
     {
         for (int i = 0; i < 5; i++)
         {
@@ -51,7 +51,6 @@ namespace mis321_pa2_hdwells
                 Thread.Sleep(200);
             }
         }
-            WelcomeMessage();
     }
 
         //randomize character - extra???

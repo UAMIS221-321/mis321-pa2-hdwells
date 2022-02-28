@@ -1,0 +1,16 @@
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.csproj.AssemblyReference.cache
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.AssemblyInfoInputs.cache
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.AssemblyInfo.cs
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.csproj.CoreCompileInputs.cache
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\mis321-pa2-hdwells.exe
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\mis321-pa2-hdwells.deps.json
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\mis321-pa2-hdwells.runtimeconfig.json
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\mis321-pa2-hdwells.runtimeconfig.dev.json
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\mis321-pa2-hdwells.dll
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\ref\mis321-pa2-hdwells.dll
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\bin\Debug\net5.0\mis321-pa2-hdwells.pdb
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.dll
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\ref\mis321-pa2-hdwells.dll
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.pdb
+C:\Users\hanna\OneDrive\Desktop\source\mis321\mis321-pa2-hdwells\obj\Debug\net5.0\mis321-pa2-hdwells.genruntimeconfig.cache

@@ -10,7 +10,6 @@ namespace mis321_pa2_hdwells
             Ship();
             WelcomeMessage();
             Chooseplayer1();
-
         }
 
         public static void WelcomeMessage()
@@ -27,8 +26,6 @@ namespace mis321_pa2_hdwells
                 {
                     Console.Clear();
 
-                    // steam
-
                     Console.Write("       . . . . o o o o o o", Color.LightGray);
                     for (int s = 0; s < j / 2; s++)
                     {
@@ -44,7 +41,7 @@ namespace mis321_pa2_hdwells
                     Console.WriteLine(margin + "                  /( (/   |)    |>", Color.DarkGreen);
                     Console.WriteLine(margin + "            ____  ( (/    (|    | )  ,", Color.DarkGreen);
                     Console.WriteLine(margin + "           |----|  (/ |   /|    |'| /^;", Color.DarkGreen);
-                    Console.WriteLine(margin + "            \\---*---Y--+-----+---+--//(;", Color.Magenta);
+                    Console.WriteLine(margin + "            \\---*---*--+----+----+--//(;", Color.Magenta);
                     Console.WriteLine(margin + "             \\-------*---*--*---*--//;", Color.Magenta);
                     Console.WriteLine("   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ", Color.DarkBlue);
 
@@ -73,44 +70,44 @@ namespace mis321_pa2_hdwells
             if (chooseCharacter1 == 1)
             {
                 player1.characterType = 1;
-                player1.Health = 100;
+                //player1.Health = 100;
                 player1.SetAttackBehavior(new Distract());
-                player1.MaxPower = GetMaxPower();
+               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 2)
             {
                 player1.characterType = 2;
-                player1.Health = 100;
+                //player1.Health = 100;
                 player1.SetAttackBehavior(new Sword());
-                player1.MaxPower = GetMaxPower();
+               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 3)
             {
                 player1.characterType = 3;
-                player1.Health = 100;
+               // player1.Health = 100;
                 player1.SetAttackBehavior(new Cannon());
-                player1.MaxPower = GetMaxPower();
+                //player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 4)
             {
                 player1.characterType = 4;
                 player1.SetAttackBehavior(new Stun());
-                player1.Health = 100;
-                player1.MaxPower = GetMaxPower();
+                //player1.Health = 100;
+               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 5)
             {
                 player1.characterType = 5;
-                player1.Health = 100;
+               // player1.Health = 100;
                 player1.SetAttackBehavior(new MonkeyAttack());
-                player1.MaxPower = GetMaxPower();
+               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 6)
             {
                 Random r = new Random();
                 player1.characterType = r.Next(0, 5);
-                player1.Health = 100;
-                player1.MaxPower = GetMaxPower();
+               // player1.Health = 100;
+               // player1.MaxPower = GetMaxPower();
 
                 if (player1.characterType == 1)
                 {
@@ -161,51 +158,51 @@ namespace mis321_pa2_hdwells
             int chooseCharacter2 = int.Parse(Console.ReadLine());
             while (chooseCharacter2 > 6 && chooseCharacter2 < 1)
             {
-                Console.WriteLine("Invalid input! Please choose a number between 1-6.");
+                Console.WriteLine("Invalid input! Please choose a number between 1-7.");
                 chooseCharacter2 = int.Parse(Console.ReadLine());
             }
 
             if (chooseCharacter2 == 1)
             {
                 player2.characterType = 1;
-                player2.Health = 100;
+                //player2.Health = 100;
                 player2.SetAttackBehavior(new Distract());
-                player2.MaxPower = GetMaxPower();
+                //player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 2)
             {
                 player2.characterType = 2;
-                player2.Health = 100;
+               // player2.Health = 100;
                 player2.SetAttackBehavior(new Sword());
-                player2.MaxPower = GetMaxPower();
+                //player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 3)
             {
                 player2.characterType = 3;
-                player2.Health = 100;
+               // player2.Health = 100;
                 player2.SetAttackBehavior(new Cannon());
-                player2.MaxPower = GetMaxPower();
+               // player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 4)
             {
                 player2.characterType = 4;
-                player2.Health = 100;
+               // player2.Health = 100;
                 player2.SetAttackBehavior(new Stun());
-                player2.MaxPower = GetMaxPower();
+               // player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 5)
             {
                 player2.characterType = 5;
-                player2.Health = 100;
+               // player2.Health = 100;
                 player2.SetAttackBehavior(new MonkeyAttack());
-                player2.MaxPower = GetMaxPower();
+               // player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 6)
             {
                 Random r = new Random();
                 player2.characterType = r.Next(0, 5);
-                player2.Health = 100;
-                player2.MaxPower = GetMaxPower();
+               // player2.Health = 100;
+               // player2.MaxPower = GetMaxPower();
 
                 if (player2.characterType == 1)
                 {
@@ -237,13 +234,6 @@ namespace mis321_pa2_hdwells
 
         }
 
-        public static double GetMaxPower() //randomizes max power
-        {
-            Random m = new Random();
-            double MaxPower = m.Next(1, 100);
-            return MaxPower;
-        }
-
         public static void GameTime(Character player1, Character player2) //start of the actual game
         {
             System.Console.WriteLine("Let's play the Battle of Calypso's Maelstrom! \t");
@@ -257,22 +247,17 @@ namespace mis321_pa2_hdwells
 
                 while (player1.Health > 0 && player2.Health > 0)
                 {
-
                     System.Console.WriteLine($"{player1.Name} is attacking ...");
-                    double DefensePower = player1.GetDefensePower();
-                    double AttackPower = player1.GetAttackPower(player1.MaxPower);
-                    double attack = player1.attackBehavior.Attack(player2, AttackPower, DefensePower);
+                    double attack = player1.attackBehavior.Attack(player2, player1.AttackPower, player2.DefensePower);
                     player2.Health = player2.Health - attack;
-                    System.Console.WriteLine($"Attack Power: {AttackPower} | Defense Power: {DefensePower} | Damage Dealt: {attack}");
+                    System.Console.WriteLine($"Attack Power: {player1.AttackPower} | Defense Power: {player1.DefensePower} | Damage Dealt: {attack}");
                     ShowPlayerStats(player2);
                     ManageHealth(player2, player1);
 
                     System.Console.WriteLine($"{player2.Name} is attacking ...");
-                    DefensePower = player2.GetDefensePower();
-                    AttackPower = player2.GetAttackPower(player2.MaxPower);
-                    attack = player2.attackBehavior.Attack(player1, AttackPower, DefensePower);
+                    attack = player2.attackBehavior.Attack(player1, player2.AttackPower, player1.DefensePower);
                     player1.Health = player1.Health - attack;
-                    System.Console.WriteLine($"Attack Power: {AttackPower} |  Defense Power: {DefensePower} | Damage Dealt: {attack}");
+                    System.Console.WriteLine($"Attack Power: {player2.AttackPower} |  Defense Power: {player2.DefensePower} | Damage Dealt: {attack}");
                     ShowPlayerStats(player1);
                     ManageHealth(player1, player2);
                 }
@@ -283,20 +268,16 @@ namespace mis321_pa2_hdwells
                 {
 
                     System.Console.WriteLine($"{player2.Name} is attacking ...");
-                    double DefensePower = player2.GetDefensePower();
-                    double AttackPower = player2.GetAttackPower(player2.MaxPower);
-                    double attack = player2.attackBehavior.Attack(player1, AttackPower, DefensePower);
+                    double attack = player2.attackBehavior.Attack(player1, player2.AttackPower, player1.DefensePower);
                     player1.Health = player1.Health - attack;
-                    System.Console.WriteLine($"Attack Power: {AttackPower} | Defense Power: {DefensePower} | Damage Dealt: {attack}");
+                    System.Console.WriteLine($"Attack Power: {player1.AttackPower} | Defense Power: {player1.DefensePower} | Damage Dealt: {attack}");
                     ShowPlayerStats(player1);
                     ManageHealth(player1, player2);
 
                     System.Console.WriteLine($"{player1.Name} is attacking ...");
-                    DefensePower = player1.GetDefensePower();
-                    AttackPower = player1.GetAttackPower(player1.MaxPower);
-                    attack = player1.attackBehavior.Attack(player2, AttackPower, DefensePower);
+                    attack = player1.attackBehavior.Attack(player2, player1.AttackPower, player2.DefensePower);
                     player2.Health = player2.Health - attack;
-                    System.Console.WriteLine($"Attack power: {AttackPower} | Defense Power: {DefensePower} | Damage Dealt: {attack}");
+                    System.Console.WriteLine($"Attack power: {player2.AttackPower} | Defense Power: {player2.DefensePower} | Damage Dealt: {attack}");
                     ShowPlayerStats(player2);
                     ManageHealth(player2, player1);
                 }

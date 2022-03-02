@@ -3,16 +3,16 @@ namespace mis321_pa2_hdwells
 {
     public class MonkeyAttack : IAttack
     {
-        public double Attack(Character player, double AttackPower, double DefensePower)
+        public double Attack(Character player,double AttackPower, double DefensePower)
         {
             System.Console.WriteLine("Captain Barbosa unleashed his pet monkey to attack!");
-            if(DefensePower > AttackPower)
+            if(player.DefensePower > player.AttackPower)
             {
                 return 1.0;
             }
             else
             {
-                return AttackPower - DefensePower;
+                return player.AttackPower - player.DefensePower;
             }
         }
     }

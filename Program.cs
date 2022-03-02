@@ -26,24 +26,24 @@ namespace mis321_pa2_hdwells
                 {
                     Console.Clear();
 
-                    Console.Write("       . . . . o o o o o o", Color.LightGray);
+                    Console.Write("       . . . . o o o o o o");
                     for (int s = 0; s < j / 2; s++)
                     {
-                        Console.Write(" o", Color.LightGray);
+                        Console.Write(" o");
                     }
                     Console.WriteLine();
                     var margin = "".PadLeft(j);
 
                     margin = "".PadLeft(j);
-                    Console.WriteLine(margin + "                    |~     ", Color.DarkGreen);
-                    Console.WriteLine(margin + "                    |/     |>   |>", Color.DarkGreen);
-                    Console.WriteLine(margin + "                    / (   (|    |", Color.DarkGreen);
-                    Console.WriteLine(margin + "                  /( (/   |)    |>", Color.DarkGreen);
-                    Console.WriteLine(margin + "            ____  ( (/    (|    | )  ,", Color.DarkGreen);
-                    Console.WriteLine(margin + "           |----|  (/ |   /|    |'| /^;", Color.DarkGreen);
-                    Console.WriteLine(margin + "            \\---*---*--+----+----+--//(;", Color.Magenta);
-                    Console.WriteLine(margin + "             \\-------*---*--*---*--//;", Color.Magenta);
-                    Console.WriteLine("   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ", Color.DarkBlue);
+                    Console.WriteLine(margin + "                    |~     ");
+                    Console.WriteLine(margin + "                    |/     |>   |>");
+                    Console.WriteLine(margin + "                    / (   (|    |");
+                    Console.WriteLine(margin + "                  /( (/   |)    |>");
+                    Console.WriteLine(margin + "            ____  ( (/    (|    | )  ,");
+                    Console.WriteLine(margin + "           |----|  (/ |   /|    |'| /^;");
+                    Console.WriteLine(margin + "            \\---*---*--+----+----+--//(;");
+                    Console.WriteLine(margin + "             \\-------*---*--*---*--//;");
+                    Console.WriteLine("   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ");
 
                     Thread.Sleep(200);
                 }
@@ -70,44 +70,32 @@ namespace mis321_pa2_hdwells
             if (chooseCharacter1 == 1)
             {
                 player1.characterType = 1;
-                //player1.Health = 100;
                 player1.SetAttackBehavior(new Distract());
-               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 2)
             {
                 player1.characterType = 2;
-                //player1.Health = 100;
                 player1.SetAttackBehavior(new Sword());
-               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 3)
             {
                 player1.characterType = 3;
-               // player1.Health = 100;
                 player1.SetAttackBehavior(new Cannon());
-                //player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 4)
             {
                 player1.characterType = 4;
                 player1.SetAttackBehavior(new Stun());
-                //player1.Health = 100;
-               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 5)
             {
                 player1.characterType = 5;
-               // player1.Health = 100;
                 player1.SetAttackBehavior(new MonkeyAttack());
-               // player1.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter1 == 6)
             {
                 Random r = new Random();
                 player1.characterType = r.Next(0, 5);
-               // player1.Health = 100;
-               // player1.MaxPower = GetMaxPower();
 
                 if (player1.characterType == 1)
                 {
@@ -165,44 +153,33 @@ namespace mis321_pa2_hdwells
             if (chooseCharacter2 == 1)
             {
                 player2.characterType = 1;
-                //player2.Health = 100;
                 player2.SetAttackBehavior(new Distract());
-                //player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 2)
             {
                 player2.characterType = 2;
-               // player2.Health = 100;
                 player2.SetAttackBehavior(new Sword());
-                //player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 3)
             {
                 player2.characterType = 3;
-               // player2.Health = 100;
                 player2.SetAttackBehavior(new Cannon());
-               // player2.MaxPower = GetMaxPower();
+               
             }
             else if (chooseCharacter2 == 4)
             {
                 player2.characterType = 4;
-               // player2.Health = 100;
                 player2.SetAttackBehavior(new Stun());
-               // player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 5)
             {
                 player2.characterType = 5;
-               // player2.Health = 100;
                 player2.SetAttackBehavior(new MonkeyAttack());
-               // player2.MaxPower = GetMaxPower();
             }
             else if (chooseCharacter2 == 6)
             {
                 Random r = new Random();
                 player2.characterType = r.Next(0, 5);
-               // player2.Health = 100;
-               // player2.MaxPower = GetMaxPower();
 
                 if (player2.characterType == 1)
                 {
